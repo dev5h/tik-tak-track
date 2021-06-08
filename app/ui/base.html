@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/app.css" />
+    <title>Hello</title>
+  </head>
+  <body>
+    <div id="header-nav">
+      <div id="logo">track-it</div>
+      <button
+        style="display: flex; align-items: center; gap: 10px"
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-plus-square-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"
+          />
+        </svg>
+        Add Tracker
+      </button>
+    </div>
+    <!--Modal-->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div
+          class="modal-content"
+          style="background-color: #13141d; color: #fff"
+        >
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              style="filter: invert(1)"
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input
+              autocomplete="off"
+              type="text"
+              class="form-control raw-ins rounded-pill"
+              id="date"
+              placeholder="Date"
+            />
+            <br />
+
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 24px;
+              "
+            >
+              <input
+                autocomplete="off"
+                type="text"
+                class="form-control raw-ins rounded-pill"
+                id="target-time"
+                placeholder="Traget Time"
+              /><input
+                autocomplete="off"
+                type="text"
+                class="form-control raw-ins rounded-pill"
+                id="achieved-time"
+                placeholder="Achieved Time"
+              />
+            </div>
+            <br />
+            <div id="subject-list">
+              <h4>Subjects Read</h4>
+              <br />
+
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Bengali"
+                  id="subjects"
+                />
+                <label class="form-check-label" for="subjects"> Bengali </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="English"
+                  id="subjects"
+                />
+                <label class="form-check-label" for="subjects"> English </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Mathematics"
+                  id="subjects"
+                />
+                <label class="form-check-label" for="subjects">
+                  Mathematics
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Physics"
+                  id="subjects"
+                />
+                <label class="form-check-label" for="subjects"> Physics </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Chemistry"
+                  id="subjects"
+                />
+                <label class="form-check-label" for="subjects">
+                  Chemistry
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="Biology"
+                  id="subjects"
+                />
+                <label class="form-check-label" for="subjects"> Biology </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value="ICT"
+                  id="subjects"
+                />
+                <label class="form-check-label" for="subjects"> ICT </label>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" id="assignBtn" class="btn btn-primary">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {% block content %} {% endblock %}
+    <script src="/static/scripts/bootstrap.bundle.min.js"></script>
+    <script src="/static/scripts/bootstrap.min.js"></script>
+    <script src="/static/scripts/app.js"></script>
+  </body>
+</html>

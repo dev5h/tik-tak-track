@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Trackit
+Comment=Study Booster
+Exec=/home/shazin/Coding/Python/Project/TrackIt/dist/runner/run.sh
+Icon=/home/shazin/Coding/Python/Project/TrackIt/dist/icon/icon.png
+Terminal=false
+Categories=Prodctivity
+

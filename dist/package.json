@@ -1,0 +1,14 @@
+{
+  "name": "trackit",
+  "version": "1.0.0",
+  "description": "A simple shit",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Shazin",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^13.1.1"
+  }
+}
